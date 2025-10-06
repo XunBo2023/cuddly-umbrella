@@ -1,25 +1,24 @@
-# cuddly-umbrella
 <div align="center">
 <h1>cuddly-umbrella </h1>
 一群机智的一批的小伙
   <p>
-
   </p>
-</div>
 
+</div>
 
 # 团队logo：
 
-![alt text](676d9f6a-9eb6-4ba1-8eaa-13674d75693c.png)
+<div align="center">
+  
+![alt text](https://github.com/XunBo2023/cuddly-umbrella/blob/main/%E5%9B%A2%E9%98%9F%E6%A0%87%E5%BF%97.png)
+</div>
 
 **团队介绍：** 
 <div align="center">
   <p>
-    “”
   </p>
 </div>
-我们是“啊队队队”团队，  
-。  
+我们是“啊队队队”团队。  
 
 ### 设计灵感
 🎨 设计理念
