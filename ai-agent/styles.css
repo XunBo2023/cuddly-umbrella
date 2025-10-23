@@ -1,0 +1,27 @@
+:root{
+  --bg:#f6f8fb;
+  --card:#fff;
+  --accent:#3b82f6;
+}
+*{box-sizing:border-box;font-family:Segoe UI, Roboto, "Microsoft Yahei", sans-serif}
+body{margin:0;background:var(--bg);color:#0b1220}
+.container{max-width:1100px;margin:24px auto;padding:18px}
+header{display:flex;justify-content:space-between;align-items:center}
+header h1{margin:0;font-size:20px}
+.controls{font-size:13px}
+main{display:flex;gap:16px;margin-top:16px}
+.chat{flex:1;background:var(--card);padding:12px;border-radius:8px;min-height:420px;display:flex;flex-direction:column}
+.messages{flex:1;overflow:auto;padding:6px}
+.message{margin:8px 0;padding:8px;border-radius:6px;max-width:78%}
+.message.user{background:#e6f0ff;margin-left:auto}
+.message.agent{background:#eef6ea}
+.input-row{display:flex;gap:8px;margin-top:8px}
+.input-row input{flex:1;padding:8px;border:1px solid #ddd;border-radius:6px}
+.input-row button{background:var(--accent);color:#fff;border:0;padding:8px 12px;border-radius:6px}
+.sidebar{width:300px;background:var(--card);padding:12px;border-radius:8px}
+.sidebar h2,h3{margin:8px 0}
+#todoList{list-style:none;padding:0;margin:0;max-height:240px;overflow:auto}
+#todoList li{display:flex;justify-content:space-between;padding:6px;border-bottom:1px solid #f0f0f0}
+.todo-actions{display:flex;gap:6px;margin-top:8px}
+footer{margin-top:12px;font-size:13px;color:#556}
+button{cursor:pointer}

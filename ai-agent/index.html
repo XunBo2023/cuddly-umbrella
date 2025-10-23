@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>本地前端 AI 智能体</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>本地前端 AI 智能体</h1>
+      <div class="controls">
+        <label><input id="voiceToggle" type="checkbox" checked> 语音播报 (TTS)</label>
+        <button id="clearBtn">清空会话</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="chat">
+        <div id="messages" class="messages"></div>
+        <div class="input-row">
+          <input id="userInput" placeholder="输入指令，例如：添加待办 买牛奶；导出待办；创建文件 notes.txt 内容：你好" />
+          <button id="sendBtn">发送</button>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <h2>待办列表</h2>
+        <ul id="todoList"></ul>
+        <div class="todo-actions">
+          <button id="exportTodos">导出待办 (txt)</button>
+          <button id="importTodos">导入 (选择文件)</button>
+          <input id="fileInput" type="file" accept="text/plain" style="display:none" />
+        </div>
+
+        <h3>工具</h3>
+        <button id="calcBtn">计算表达式</button>
+        <input id="calcInput" placeholder="例如： (12+3)/3 * 2" />
+
+        <h3>示例命令</h3>
+        <ul>
+          <li>添加待办 买牛奶</li>
+          <li>完成待办 1</li>
+          <li>导出待办</li>
+          <li>创建文件 notes.txt 内容：这是测试</li>
+          <li>计算 12*3+5</li>
+        </ul>
+        
+        <h3>天气查询</h3>
+        <div class="weather-block">
+          <input id="weatherCity" placeholder="输入城市，例如：北京" />
+          <input id="weatherApiKey" placeholder="可选：输入 OpenWeatherMap API Key" />
+          <div style="display:flex;gap:6px;margin-top:6px">
+            <button id="saveApiKey">保存 API Key</button>
+            <button id="clearApiKey">清除 Key</button>
+            <button id="testApiKey">测试 Key</button>
+          </div>
+          <div style="display:flex;gap:6px;margin-top:6px">
+            <button id="weatherBtn">查询天气</button>
+            <button id="exampleWeather">示例：查询天气 北京</button>
+          </div>
+          <div id="weatherStatus" style="margin-top:8px;color:#444;font-size:13px"></div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>本地静态演示 - 不依赖外部 AI 服务，基于规则解析用户指令。支持在 Windows 上用浏览器打开 (file://)</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
